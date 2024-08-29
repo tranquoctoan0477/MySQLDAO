@@ -20,7 +20,6 @@ public class CategoryImpl implements CategoryDao {
 			PreparedStatement stmt = con.prepareStatement(sql);
 			stmt.setString(1, category.getName());
 			stmt.setString(2, category.getDescription());
-
 			stmt.execute();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
